@@ -1,0 +1,13 @@
+9)KEYBOARD ACTIVITY
+
+Create a variable [userText] with datatype as [String]
+inputDialog box (activity)
+  InputLabel  :  “Enter your message:”
+  Value entered  :  userText
+Open notepad
+Use application/browser(activity)
+    Indicate on screen  (notepad)
+  In Do,
+              Type Into (activity)
+                  Indicate on screen  (notepad)
+             Type this  =  userText
