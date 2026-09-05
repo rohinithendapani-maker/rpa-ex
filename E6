@@ -1,0 +1,23 @@
+6)EXCEPTION HANDLING
+
+ Activity [Try catch]
+ In Try
+Assign (actitvity)
+Variable num1  =  10
+
+Assign (activity)
+Variable num2  =  0
+
+Assign (activity)
+Variable  result   =  num1 \  num2
+
+In Catch (System.DivideByZeroException)
+  Body
+
+ Messagebox (Activity)
+    “Error” + exception.Message
+
+ In Finally
+
+MessageBox(activity)
+“Execution completed
