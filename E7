@@ -1,0 +1,16 @@
+7)CLIPBOARD MANAGEMENT
+
+Create a variable [clipboardText] with datatype String
+Invoke code(activity)
+ Code
+clipboardText  =  System.Windows.Clipboard.GetText()
+
+Arguments
+ Key = out_clipboardText
+Type = String
+Direction = out
+Value = clipboardText
+
+MessageBox(activity)
+ “Clipboard value:” +clipboardText
+In notepad ,Type some text and copy that value because the copied text is viewed in message box as output
