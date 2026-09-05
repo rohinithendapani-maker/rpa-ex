@@ -1,0 +1,27 @@
+8)INVOKE METHOD OPERATIONS
+
+Create a variable [numbers] with datatype as [System.Collections.Generic.List<T>      Int32]
+Assign (activity)
+   numbers  =  New System.Collections.Generic.List(Of Int32)
+
+Invoke method(activity)
+  Target object  =  numbers
+  Method Name  =  Add
+In the invoke method properties ,
+    Parameters
+Direction  =  In
+Type  =  Int32
+Value  =  10
+
+Invoke method(activity)
+  Target object  =  numbers
+  Method Name  =  Add
+In the invoke method properties ,
+    Parameters
+Direction  =  In
+Type  =  Int32
+Value  =  20
+
+Messagebox(activity)
+  String.Join(“,”  , numbers)
+
