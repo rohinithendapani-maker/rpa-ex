@@ -1,0 +1,13 @@
+APPLICATION  -  5
+Create a variable [emails] with datatype as [Gmailmessage]
+GetNewestEmail  [ activity]  
+               New connection,
+                Connect
+                Choose an account → continue
+	    Select all 
+  	    Continue
+Gmail , specify the email id
+Email folder / label  [Inbox]
+In properties , output  [ emails]
+message box [activity]
+     “From:” + emails.From.Address +Environment.NewLine+ “Subject:”+emails.Subject+Environment.NewLine+”Body:” +emails.Body
