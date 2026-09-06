@@ -1,0 +1,9 @@
+1)Read and Replace Text
+create a word file(HI,welcome to RPA)
+create a blank process
+drag the word application scope in activities panel
+choose the word file created
+add replace text from activities in do section
+search:old text(RPA)
+replace:new text(ABC College)
+Save and run check whether the word RPA replaced as ABC college
