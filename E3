@@ -1,0 +1,14 @@
+Start.
+Open UiPath Studio.
+Create a new process.
+Launch the Chrome browser.
+Open the Amazon website (https://www.amazon.in).
+Enter "Laptop" in the Amazon search box.
+Click the Search (🔍) button.
+Wait for the search results page to load.
+Use Extract Table Data to extract the required details (such as Product Name, Price, and Rating).
+Store the extracted data in a DataTable (dtAmazon).
+Open or create an Excel file (AmazonLaptop.xlsx) using Use Excel File.
+Use Write Range to write the DataTable into Sheet1 starting from cell A1.
+Save and close the Excel file.
+End the process.
