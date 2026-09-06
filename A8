@@ -1,0 +1,39 @@
+APPLICATION 8 : Create an Invoice Automatically
+
+Steps
+
+1.	Create an Invoice Templat
+Open Microsoft Word.
+   	Create a blank Word document.
+    	Save it as  InvoiceTemplate.docx .
+
+2 .Open UiPath Studio
+
+   	Create a new Process
+
+3. Add Word Application Scope
+
+   	Drag Word Application Scope into the workflow.
+   	 Browse and select the  “InvoiceTemplate.docx” file.
+
+4.Add Type Into
+
+   	 Inside the Word Application Scope, drag  Type Into.
+   	 Indicate the Word document area.
+   	Enter the invoice details, within double quotes 
+ 	Choose verify as Auto 
+
+  “ INVOICE
+   Customer: ABC College
+   Product: Laptop
+   Amount: 50000”
+   
+5. Run the Program
+
+   	Click Run.
+   	 UiPath automatically opens the Word template and types the invoice details.
+   	
+
+
+
+**Output:** Automatically filled invoice
