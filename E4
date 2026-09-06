@@ -1,0 +1,16 @@
+Create a blank process
+Create three variables:
+    inputString -datatype(	String)
+    searchWord-(String)
+    result	-(Boolean)
+Add assign activity in main sequence
+    Set to:inputString
+    Value:"Welcome to UiPath"
+Add another assign
+    Set to:searchWord
+    Value:"UiPath"
+Add another assign
+   Set to:result
+   Value:inputString.Contains(searchWord)
+Add message box:
+   Enter this in Text:  "Does the string contain '" + searchWord + "'? " + result.ToString
