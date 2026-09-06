@@ -1,0 +1,44 @@
+APPLICATION - 4
+Create a variable [dtInput] with datatype as datatable
+Create 2 excel with name as Input[Name, age, department] and Output [empty]
+Use excel file [activity]
+      Choose folder [Input]
+      Reference [InputExcel]
+In do, Read range [activity]
+      Range  [InputExcel.Sheet(“Sheet1”).Range(“A1”)
+      In properties , output  [Input]
+Use excel file [ activity]
+      Choose folder [Output]
+                 Reference [OutputExcel]
+In Do , Write DataTable as excel [activity]
+       What to write  =  dtInput
+       Destination   =  OutputExcel.Sheet(“sheet1”).Range(“A1”)
+
+
+Create new blank process
+Create a variable with name [Password] with datatype as [String] and [Length] with datatype as [Int32] , default value 10
+Assign [activity ]  
+      Password  =  Guid.NewGuid().ToString(“N”).Substring(0,Length)
+messageBox [activity]
+      “Generated password” + Password
+
+
+
+Create a new blank process
+Create a variable [dtEmails] with datatype as Datatable
+Create excel with name,email,department,message  .  Save as massMail
+Use excel file [activity]
+       Choose the excel file named as massMail
+In do, read range [activity]
+For each row in data table [activity]
+       Datatable = dtEmails
+Body,
+       Send email [activity] google
+       New connection,
+                Connect
+                Choose an account → continue
+	    Select all 
+  	    Continue
+To         New String() {"25smcs051@psgrkcw.ac.in"}
+Subject     “ uipath Test”
+Body   Welcome to the uipath
