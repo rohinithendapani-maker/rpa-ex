@@ -1,0 +1,12 @@
+Create a blank process
+Create two variable:
+  numList-datatype(List<Int32>)(In datatype>Browse for type>Search >(System.Collections.Generic.List<System.Int32>
+  sortedList-datatype(List<Int32>)(In datatype>Browse for type>Search >(System.Collections.Generic.List<System.Int32>
+Add assign:
+ set to:numList
+ Value:New List(Of Int32) From {50, 20, 80, 10, 40}
+Add another assign:
+ set to:sortedList
+ value: numList.OrderBy(Function(x) x).ToList()
+Add message box:
+  text: "Sorted List: " + String.Join(", ", sortedList)
