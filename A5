@@ -1,4 +1,6 @@
 APPLICATION  -  5
+SIMPLE BOT FOR READING EMAIL
+
 Create a variable [emails] with datatype as [Gmailmessage]
 GetNewestEmail  [ activity]  
                New connection,
